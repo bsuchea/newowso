@@ -1,5 +1,5 @@
 <?php
 return [
-    'users' => 'Users',
-    'roles' => 'Roles'
+    'users' => 'អ្នកប្រើប្រាស់',
+    'roles' => 'សិទ្ធ'
 ];

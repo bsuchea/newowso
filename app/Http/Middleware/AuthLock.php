@@ -24,6 +24,7 @@ class AuthLock
             // Check if previous session was set, if so, remove it because we don't need it here.
             if (session('lock-expires-at')) {
                 session()->forget('lock-expires-at');
+                session()->forget('back-url');
             }
 
             return $next($request);
@@ -31,11 +32,15 @@ class AuthLock
 
         if ($lockExpiresAt = session('lock-expires-at')) {
             if ($lockExpiresAt < now()) {
+
+                session()->put('back-url', $request->fullUrl());
+
                 return redirect()->route('login.locked');
+
             }
         }
 
-        session(['lock-expires-at' => now()->addMinutes($request->user()->getLockoutTime())]);
+        session(['lock-expires-at' => now()->addMinutes(45)]);
 
         return $next($request);
     }

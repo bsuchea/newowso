@@ -27,9 +27,14 @@ class LockScreenController extends Controller
         if(! $check) {
             return redirect()->route('login.locked')->withError(__('Your password does not match your profile.'));
         }
+//        session(['lock-expires-at' => now()->addMinutes($request->user()->getLockoutTime())]);
+//        return redirect()->intended(RouteServiceProvider::HOME);
 
-        session(['lock-expires-at' => now()->addMinutes($request->user()->getLockoutTime())]);
+        session(['lock-expires-at' => now()->addMinutes(45)]);
 
-        return redirect()->intended(RouteServiceProvider::HOME);
+        $url = session()->get('back-url') ?? route('dashboard');
+
+        return redirect()->to($url);
+
     }
 }

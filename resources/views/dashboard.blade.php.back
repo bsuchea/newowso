@@ -3,15 +3,6 @@
         <x-admin-content-header :title="$title" :breadcrumb="$breadcrumb"/>
     </x-slot>
     <x-form.flash-top-header/>
-
-    <div class="row g-4">
-        <div class="col-7">
-            <livewire:edit-date />
-        </div>
-        <div class="col-5">
-
-        </div>
+    <div class="card">
     </div>
-
 </x-admin-layout>
-

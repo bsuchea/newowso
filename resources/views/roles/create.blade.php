@@ -47,7 +47,7 @@
                                                 ?>
                                                 <div class="form-check">
                                                     <input type="checkbox" name="perm[]" class="form-check-input {{ $key }}" id="p-{{ $g->id }}" value="{{ $g->id }}" @if($checked) checked @endif>
-                                                    <label class="form-check-label" for="p-{{ $g->id }}">{{ __($g->name) }}</label>
+                                                    <label class="form-check-label" for="p-{{ $g->id }}">{{ __(str_replace('_', ' ', $g->name)) }}</label>
                                                 </div>
                                             </label>
                                         </div>

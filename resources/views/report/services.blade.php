@@ -4,14 +4,7 @@
     </x-slot>
     <x-form.flash-top-header/>
 
-    <div class="row g-4">
-        <div class="col-7">
-            <livewire:edit-date />
-        </div>
-        <div class="col-5">
-
-        </div>
-    </div>
+            <livewire:report-services />
 
 </x-admin-layout>
 
