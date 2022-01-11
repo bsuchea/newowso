@@ -194,7 +194,7 @@ input[type="text"]:focus {
         <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>
 
 {{--        <input type="text" class="num">--}}
-        <span class="h6 font-head">លិខិតអនុញ្ញាត</span>
+        <span class="h6 font-head">បណ្ណអនុញ្ញាត</span>
         <span class="h7 font-head">ប្រកបអាជីវកម្ម-សេវាកម្ម-ពាណិជ្ជកម្ម</span>
         <span class="h8 font-head">អភិបាលក្រុងបាត់ដំបង</span>
         <span class="n1">អនុញ្ញាតឱ្យ លោក-លោកស្រី </span>
@@ -213,9 +213,9 @@ input[type="text"]:focus {
 
             ភូមិ{{ $vil2->namekh }} សង្កាត់{{ $com2->namekh }} ក្រុងបាត់ដំបង ខេត្ដបាត់ដំបង។
         </span>
-        <span class="t6">អ្នកកាន់លិខិតអនុញ្ញាតត្រូវគោរពយ៉ាងម៉ឺងម៉ាត់តាមច្បាប់ និង បទបញ្ញត្តិផ្សេងៗ ហើយត្រូវដាក់តាំងបង្ហាញជាសាធារណៈ  ។</span>
+        <span class="t6">អ្នកកាន់បណ្ណអនុញ្ញាតត្រូវគោរពយ៉ាងម៉ឺងម៉ាត់តាមច្បាប់ និង បទបញ្ញត្តិផ្សេងៗ ហើយត្រូវដាក់តាំងបង្ហាញជាសាធារណៈ  ។</span>
         <span class="t7">
-            លិខិតអនុញ្ញាតសេវាកម្មនេះមានសុពលភាពត្រឹម
+            បណ្ណអនុញ្ញាតសេវាកម្មនេះមានសុពលភាពត្រឹម
             <b>
 {{--            ថ្ងៃទី........ ខែ............. ឆ្នាំ២០២...--}}
             {{ dateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period)) }}
