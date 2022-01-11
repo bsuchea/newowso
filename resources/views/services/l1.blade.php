@@ -199,9 +199,8 @@
         <span class="h3 font-head">ខេត្តបាត់ដំបង</span>
         <span class="h4 font-head">រដ្ឋបាលក្រុងបាត់ដំបង</span>
 
-        <span class="h5">លេខៈ .......................កបប</span>
-
-        <!-- <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span> -->
+{{--        <span class="h5">លេខៈ .......................កបប</span>--}}
+        <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>
 
         <div class="photobox"><br><br>4 x 6</div>
 
