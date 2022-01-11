@@ -155,6 +155,7 @@
     top: 200px;
     left: 185px;
     width: 125px;
+    padding: 6px 0;
 }
 input[type="text"]:focus {
     outline: 0px;
