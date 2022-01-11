@@ -27,17 +27,17 @@
             position: absolute;
         }
 .h1 {
-    top: 148px;
-    left: 875px;
+    top: 130px;
+    left: 865px;
 }
 .h2 {
-    top: 175px;
-    left: 854px;
+    top: 159px;
+    left: 847px;
 }
 .img001{
     position: absolute;
-    top: 208px;
-    left: 895px;
+    top: 190px;
+    left: 886px;
 }
 .h3 {
     top: 190px;
@@ -54,50 +54,69 @@
     text-align: center;
 }
 .h6 {
-    top: 230px;
-    left: 535px;
+    top: 215px;
+    left: 238px;
     font-size: 20px;
+    width: 700px;
+    text-align: center;
 }
 
 .h7 {
-    top: 262px;
-    left: 425px;
+    top: 247px;
+    left: 237px;
     font-size: 18px;
+    width: 700px;
+    text-align: center;
 }
 .t1 {
     font-size: 14px;
-    top: 300px;
-    left: 260px;
+    top: 279px;
+    left: 248px;
 }
 .t2 {
     font-size: 14px;
-    top: 300px;
-    left: 345px;
+    top: 279px;
+    left: 300px;
 }
 .t3 {
     font-size: 14px;
-    top: 322px;
-    left: 355px;
+    top: 299px;
+    left: 308px;
 }
 .t4 {
     font-size: 14px;
-    top: 344px;
-    left: 345px;
+    top: 317px;
+    left: 300px;
 }
 .t5 {
     font-size: 14px;
-    top: 368px;
-    left: 355px;
+    top: 338px;
+    left: 308px;
+}
+.t51 {
+    font-size: 14px;
+    top: 357px;
+    left: 300px;
+}
+.t52 {
+    font-size: 14px;
+    top: 376px;
+    left: 308px;
+}
+.t53 {
+    font-size: 14px;
+    top: 395px;
+    left: 308px;
 }
 .n1, .name, .s1, .ser_type, .b1, .brand, .a1, .addr, .t6, .t7, .t8 {
     font-size: 15px;
 }
 .n1 {
-    top: 400px;
+    top: 418px;
     left: 260px;
 }
 .name {
-    top: 400px;
+    top: 418px;
     left: 415px;
 }
 .namekh{
@@ -107,36 +126,36 @@
     text-transform: uppercase;
 }
 .s1 {
-    top: 428px;
+    top: 440px;
     left: 260px;
 }
 .ser_type {
-    top: 428px;
+    top: 440px;
     left: 415px;
 }
 .b1 {
-    top: 453px;
+    top: 462px;
     left: 260px;
 }
 .brand {
-    top: 453px;
+    top: 462px;
     left: 415px;
 }
 .a1 {
-    top: 478px;
+    top: 483px;
     left: 260px;
 }
 .addr {
-    top: 478px;
+    top: 483px;
     left: 415px;
 }
 .t6 {
-    top: 502px;
-    left: 355px;
+    top: 505px;
+    left: 308px;
 }
 .t7 {
     top: 528px;
-    left: 355px;
+    left: 308px;
 }
 .t8 , .t9 {
     font-family: "Khmer", "Khmer OS Battambang", "Khmer OS Siemreap";
@@ -147,7 +166,7 @@
     text-align: center;
     width: 420px;
     height: 30px;
-    left: 670px;
+    left: 655px;
 }
 .t8 {
     top: 550px;
@@ -173,7 +192,7 @@
     text-align: center;
     border: 1px solid #1a202c;
     top: 315px;
-    left: 140px;
+    left: 135px;
 }
 
 @media print {
@@ -199,18 +218,22 @@
         <div class="photobox"><br><br>4 x 6</div>
 
         <span class="h6 font-head">បណ្ណអនុញ្ញាត</span>
-        <span class="h7 font-head">ប្រកបអាជីវកម្ម-សេវាកម្មវិស័យវប្បធម៌</span>
-        <span class="t1">យោង &nbsp; ៖ </span>
-        <span class="t2">- អនុក្រឹត្យលេខ១៨ អនក្រ.បក ចុះថ្ងៃទី០៨ ខែកុម្ភៈ ឆ្នាំ២០១៧ ស្តីពីការបង្កើតយន្តការច្រកចេញចូលតែមួយសម្រាប់ </span>
-        <span class="t3">ការផ្តល់សេវារដ្ឋបាលនៅរដ្ឋបាលថ្នាក់ក្រោមជាតិ </span>
-        <span class="t4">- ប្រកាសរួមលេខ៦៥៧ សហវ.ប្រក ចុះថ្ងៃទី០៦ ខែមិថុនា ឆ្នាំ២០១៦ ស្តីពីការផ្តល់សេវាសាធារណៈរបស់ក្រសួងវប្បធម៌ </span>
-        <span class="t5">និងវិចិត្រសិល្បៈ រវាងក្រសួងសេដ្ឋកិច្ចនិងហិរញ្ញវត្ថុ និងក្រសួងវប្បធម៌និងវិចិត្រសិល្បៈ </span>
-        <span class="n1">អនុញ្ញាតឲ្យឈ្មោះ </span>
-        <span class="name">: <name class="font-head namekh">{{ $cus->namekh }}  </name> អក្សឡាតាំង <b> {{ $cus->nameen }} &nbsp; </b>  ថ្ងៃខែឆ្នាំកំណើត {{ formatDateKh($cus->dob) }} </span>
+        <span class="h7 font-head">ប្រកបអាជីវកម្ម-សេវាកម្មវិស័យសុខាភិបាល</span>
+
+        <span class="t1">យោង ៖ </span>
+        <span class="t2">- សេចក្តីសម្រេចលេខ ១២សសរ ចុះថ្ងៃទី៣០ ខែមិថុនា ឆ្នាំ២០០៨ របស់រាជរដ្ឋាភិបាលកម្ពុជាស្តីពីការបង្កើតការិ.ច្រក.១ </span>
+        <span class="t3">និងការិ.ប្រជាពលរដ្ឋនៅថ្នាក់ស្រុក/ខណ្ឌ។ </span>
+        <span class="t4">- ប្រកាសលេខ ០៧៧ សនប ចុះថ្ងៃទី ២០ ខែ មីនា  ឆ្នាំ ២០១៥ របស់ក្រសួងសុខាភិបាល ស្តីពីការធើ្វប្រតិភូកម្មមុខងារ នៃវិស័យសុខាភិបាល ជូន</span>
+        <span class="t5">ដល់រដ្ឋបាល ថ្នាក់ក្រោមជាតិ ក្នុងការផ្តល់សេវាសាធារណៈ របស់ក្រសួងសុខាភិបាល ។</span>
+        <span class="t51">- ប្រកាសរួមលេខ ១៤៣២ សហវ.ប្រក ចុះថ្ងៃទី ២០ ខែ វិច្ឆិកា ឆ្នាំ២០១៤ របស់ក្រសួងសេដ្ឋកិច្ច និងហិរញ្ញវត្ថុ សី្តពីការកែប្រែកម្រងសេវាសាធារណៈ </span>
+        <span class="t52">នៃតារាងឧបសម័្ពន្ឋភ្ជាប់នឹងប្រកាសរួមលេខ៩៩៣ សហវ.ប្រក ចុះថ្ងៃទី ២៨ ខែ ធ្នូ ឆ្នាំ ២០១២ ស្តីពីការផ្តល់សេវាសាធារណៈ</span>
+        <span class="t53">របស់ក្រសួងសុខាភិបាល ។</span>
+
+        <span class="n1">អនុញ្ញាតឲ្យលោក{{ $cus->gender=='ស្រី'?'ស្រី':'' }} </span>
+        <span class="name">: <name class="font-head namekh">{{ $cus->namekh }}  </name> អត្តសញ្ញាណប័ណ្ណលេខ  <b> {{ $cus->natinal_id }} &nbsp; </b> </span>
         <span class="s1">ប្រភេទសេវាកម្ម </span>
         <span class="ser_type">
-            : {{ $ser_type->namekh }} &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-            @if($tran->amount != '') ចំនួន  {{ convertToKhmerNumber($tran->amount) }}{{ $ser_type->gauge }} @endif
+            : {{ $ser_type->namekh }}
         </span>
         <span class="b1">នាមករណ៍ </span>
         <span class="brand">: <b>{{ $ser->brand_namekh }} {{ $ser->brand_nameen==''?'':'- '.$ser->brand_nameen }}  </b></span>
@@ -222,18 +245,28 @@
 
             ភូមិ{{ $vil2->namekh }} សង្កាត់{{ $com2->namekh }} ក្រុងបាត់ដំបង ខេត្ដបាត់ដំបង។
         </span>
-        <span class="t6">បណ្ណអនុញ្ញាតសេវាកម្មនេះមានសុពលភាពត្រឹម {{ dateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period)) }}។</span>
-        <span class="t7">មុនផុតកំណត់រយៈពេល១៥ថ្ងៃ អាជីវករត្រូវ មកដាក់សុំបន្តអាជីវកម្មនៅឆ្នាំបន្ទាប់។ </span>
+        <span class="t6">
+            បណ្ណអនុញ្ញាតិនេះ មានសុពលភាពរយៈពេល <b>{{ $ser_type->validity }}</b>
+            មានប្រសិទ្ធិភាពត្រឹម <b>{{ dateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period)) }}</b>។
+        </span>
+        <span class="t7">មុនផុតកំណត់ពីរខែ សាម៉ីជនត្រូវអញ្ជើញមកបន្តសុពលភាពសម្រាប់ប្រើប្រាស់ជាថ្មី ។ </span>
 
-        <input class="t8" value="{{ $sec->lunar_date }}" >
-        <input type="text" value="ក្រុងបាត់ដំបង {{ $sec->date }}" class="t9">
+        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">
+        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">
         <span class="t10 font-head">អភិបាលក្រុង </span>
 
         <span class="t11">បញ្ជាក់៖ បណ្ណអនុញ្ញាតនេះត្រូវដាក់តាំង ឬ ព្យួរនៅកន្លែងទទួលភ្ញៀវ  </span>
 
     </div>
 
+<script src="/js/taskpane.js"></script>
 <script type="application/javascript">
+    var date = document.getElementById('lunar_date').value;
+    // var date = "23/10/2021"
+    var selectedDate = new Date(date.split("/")[2],(parseInt(date.split("/")[1])-1),date.split("/")[0] );
+    var solarText = new LunarText().getKhmerLunarString(selectedDate);
+    document.getElementById('lunar_date').value = solarText;
+
     window.onafterprint = function () { window.close(); }
 </script>
 

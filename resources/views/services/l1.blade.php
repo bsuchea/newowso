@@ -199,7 +199,7 @@
         <span class="h3 font-head">ខេត្តបាត់ដំបង</span>
         <span class="h4 font-head">រដ្ឋបាលក្រុងបាត់ដំបង</span>
 
-        <span class="h5">លេខៈ ..................................</span>
+        <span class="h5">លេខៈ .......................កបប</span>
 
         <!-- <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span> -->
 
@@ -231,26 +231,26 @@
         </span>
         <span class="t6">
             បណ្ណអនុញ្ញាតិនេះ មានសុពលភាពរយៈពេល <b>{{ $ser_type->validity }}</b>
-            មានប្រសិទ្ធិភាពត្រឹម 
+            មានប្រសិទ្ធិភាពត្រឹម
             <b>
-            ថ្ងៃទី........ ខែ............. ឆ្នាំ២០២...
-                <!-- {{ dateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period)) }} -->
+{{--            ថ្ងៃទី........ ខែ............. ឆ្នាំ២០២...--}}
+                {{ dateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period)) }}
             </b>។
         </span>
 
         <span class="t7">មុនផុតកំណត់រយៈពេល១៥ថ្ងៃ អាជីវករត្រូវ មកដាក់សុំបន្តអាជីវកម្មនៅឆ្នាំបន្ទាប់។ </span>
 
-        
-        <input class="t8" value="ថ្ងៃ............................ ខែ.............. ឆ្នាំឆ្លូវ ត្រី​ស័ក ព.ស.២៥៦៥" id="lunar_date">
-        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី........ ខែ............. ឆ្នាំ២០២២">
-        
-        <!-- <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date"> -->
-        <!-- <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}"> -->
+
+{{--        <input class="t8" value="ថ្ងៃ............................ ខែ.............. ឆ្នាំឆ្លូវ ត្រី​ស័ក ព.ស.២៥៦៥" id="lunar_date">--}}
+{{--        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី........ ខែ............. ឆ្នាំ២០២២">--}}
+
+        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">
+        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">
         <span class="t10 font-head">អភិបាលក្រុង </span>
 
         <span class="t11">បញ្ជាក់៖ បណ្ណអនុញ្ញាតនេះត្រូវដាក់តាំង ឬ ព្យួរនៅកន្លែងទទួលភ្ញៀវ  </span>
-
     </div>
+
 <script src="/js/taskpane.js"></script>
 <script type="application/javascript">
     var date = document.getElementById('lunar_date').value;
