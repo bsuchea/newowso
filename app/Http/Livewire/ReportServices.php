@@ -31,8 +31,8 @@ class ReportServices extends Component
 
         $this->query = VServiceExport::query()
             ->whereBetween('date_out', [$this->fromdate, $this->todate])
+            ->whereNull('deleted_at' )
             ->where('sector_id', '=', $this->sector_id)
-            ->whereNotNull('deleted_at' )
             ->get();
 
         return view('livewire.report-services', [
