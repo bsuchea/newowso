@@ -208,7 +208,9 @@ input[type="text"]:focus {
         <span class="s1">ប្រភេទអាជីវកម្ម-សេវាកម្ម</span>
         <span class="ser_type font-head">
             : {!! $ser_type->namekh !!} &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-            @if($tran->amount != '') @if($tran->amount > 0) ចំនួន  {{ convertToKhmerNumber($tran->amount) }}{{ $ser_type->gauge }} @endif @endif
+            @if($tran->amount != '') @if($tran->amount > 0)
+                ចំនួន  {{ convertToKhmerNumber($tran->amount) }}{{ $ser_type->gauge }}
+            @endif @endif
         </span>
         <span class="b1">នាមករណ៍ </span>
         <span class="brand font-head">: {{ $ser->brand_namekh }} <b>{{ $ser->brand_nameen==''?'':'- '.$ser->brand_nameen }}  </b></span>

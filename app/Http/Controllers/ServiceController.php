@@ -144,7 +144,7 @@ class ServiceController extends Controller
     public function destroy($id)
     {
         //
-        $query = $this->service->find($id);
+        $query = ServiceTransection::find($id);c
 
         if ($query->id === auth()->id()) {
             return ['error' => true, 'message' => __('Fail Delete')];
