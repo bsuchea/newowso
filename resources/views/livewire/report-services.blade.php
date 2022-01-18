@@ -38,8 +38,8 @@
                         <th>#</th>
                         <th>{{ __('Letter Number') }}</th>
                         <th>{{ __('Customer Name') }}</th>
-                        <th>{{ __('Gender') }}</th>
                         <th>{{ __('Brand Name') }}</th>
+                        <th>{{ __('Gender') }}</th>
                         <th>{{ __('Business Type') }}</th>
                         <th>{{ __('Village') }}</th>
                         <th>{{ __('Commune') }}</th>
@@ -59,8 +59,8 @@
                         <td>{{ $q->business_type }}</td>
                         <td>{{ $q->village }}</td>
                         <td>{{ $q->commune }}</td>
-                        <td>{{ $q->date_out }}</td>
                         <td>{{ $q->service_type }}</td>
+                        <td>{{ $q->date_out }}</td>
                         <td>{{ $q->phone }}</td>
                     </tr>
                     @endforeach
