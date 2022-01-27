@@ -107,7 +107,7 @@ class ServiceEdit extends Component
                     'date_out' => 'required',
                     'service_type_id' => 'required',
                     'village_id' => 'required',
-                    'customer_name' => 'required',
+                    'customer_namekh' => 'required',
                     'customer_village_id' => 'required',
                 ]);
 
@@ -208,5 +208,5 @@ class ServiceEdit extends Component
         $customer->save();
         $this->customer_id = $customer->id;
     }
-    
+
 }
