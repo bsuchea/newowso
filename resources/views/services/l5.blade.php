@@ -181,7 +181,10 @@
             អនុញ្ញាតិជូនលោក{{ $cus->gender=='ស្រី'?'ស្រី':'' }}
             <name class="font-head namekh">{{ $cus->namekh }}  </name>
             កាន់អត្តសញ្ញាណប័ណ្ណលេខ {{ $cus->national_id }}
-            មានទីលំនៅសព្វថ្ងៃភូមិ{{ $cus->village->namekh }}
+            មានទីលំនៅសព្វថ្ងៃ {{ $ser->home==''?'':'ផ្ទះលេខ'.$cus->home }}
+              {{ $cus->street==''?'':'ផ្លូវ'.$cus->street }}
+              {{ $cus->group==''?'':'ក្រុមទី'.$cus->group }}
+            ភូមិ{{ $cus->village->namekh }}
             សង្កាត់{{ $cus->commune->namekh }}
             ក្រុង{{ $cus->district->namekh }}
             ខេត្ដ{{ $cus->province->namekh }}។
