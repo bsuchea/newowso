@@ -108,7 +108,7 @@ class ServiceEdit extends Component
                     'service_type_id' => 'required',
                     'village_id' => 'required',
                     'customer_namekh' => 'required',
-                    'customer_village_id' => 'required',
+                    'customer_village' => 'required',
                 ]);
 
             $this->insertCustomer();
