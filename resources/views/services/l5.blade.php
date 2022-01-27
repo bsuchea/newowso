@@ -181,10 +181,10 @@
             អនុញ្ញាតិជូនលោក{{ $cus->gender=='ស្រី'?'ស្រី':'' }}
             <name class="font-head namekh">{{ $cus->namekh }}  </name>
             កាន់អត្តសញ្ញាណប័ណ្ណលេខ {{ $cus->national_id }}
-            មានទីលំនៅសព្វថ្ងៃភូមិ{{ $cus->village()->namekh }}
-            សង្កាត់{{ $cus->commune()->namekh }}
-            ក្រុង{{ $cus->district()->namekh }}
-            ខេត្ដ{{ $cus->province()->namekh }}។
+            មានទីលំនៅសព្វថ្ងៃភូមិ{{ $cus->village->namekh }}
+            សង្កាត់{{ $cus->commune->namekh }}
+            ក្រុង{{ $cus->district->namekh }}
+            ខេត្ដ{{ $cus->province->namekh }}។
             ធ្វើអាជីវកម្មលក់ <name class="font-head namekh"> {{ $ser_type->namekh }} </name>
             ស្លាកយីហោ <name class="font-head namekh"> {{ $ser->brand_namekh }} </name>
             មានទីតាំងស្ថិតនៅ {{ $ser->home==''?'':'ផ្ទះលេខ'.$ser->home }}
