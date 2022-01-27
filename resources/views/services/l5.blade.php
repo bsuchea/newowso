@@ -200,7 +200,15 @@
 
         <span class="t7">សាមីជនត្រូវអនុវត្តឱ្យបានត្រឹមត្រូវតាមបទបញ្ញាត្តិដូចមានចែងក្នុងកិច្ចសន្យានិងលិខិតបទដ្ឋានគតិយុត្តខាងលើ ។ </span>
 {{--        <span class="t12">លិខិតអនុញ្ញាតិនេះមានសុពលភាពរយះពេល០១(មួយ)ឆ្នាំ គិតត្រឹម {{ dateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period)) }}។</span>--}}
-        <span class="t12">លិខិតអនុញ្ញាតិនេះមានសុពលភាពរយះពេល០១(មួយ)ឆ្នាំ គិតត្រឹម {{ $sec->date }} ។</span>
+{{--        <span class="t12">លិខិតអនុញ្ញាតិនេះមានសុពលភាពរយះពេល០១(មួយ)ឆ្នាំ គិតត្រឹម {{ $sec->date }} ។</span>--}}
+        <span class="t12">
+            បណ្ណអនុញ្ញាតិនេះ មានសុពលភាពរយៈពេល <b>{{ $ser_type->validity }}</b>
+            មានប្រសិទ្ធិភាពត្រឹម
+            <b>
+{{--            ថ្ងៃទី........ ខែ............. ឆ្នាំ២០២...--}}
+                {{ dateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period)) }}
+            </b>។
+        </span>
 
         <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">
         <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">
