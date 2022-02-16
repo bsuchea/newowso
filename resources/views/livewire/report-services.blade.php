@@ -35,11 +35,10 @@
                 <table class="table dt-responsive nowrap ">
                     <thead>
                     <tr>
-                        <th>#</th>
                         <th>{{ __('Letter Number') }}</th>
                         <th>{{ __('Customer Name') }}</th>
-                        <th>{{ __('Brand Name') }}</th>
                         <th>{{ __('Gender') }}</th>
+                        <th>{{ __('Brand Name') }}</th>
                         <th>{{ __('Business Type') }}</th>
                         <th>{{ __('Village') }}</th>
                         <th>{{ __('Commune') }}</th>
@@ -51,11 +50,10 @@
                     <tbody>
                     @foreach($query as $q)
                     <tr>
-                        <th>{{ $i++ }}</th>
                         <td>{{ $q->letter_number }}</td>
                         <td>{{ $q->namekh }}</td>
-                        <td>{{ $q->brand_namekh }}</td>
                         <td>{{ $q->gender }}</td>
+                        <td>{{ $q->brand_namekh }}</td>
                         <td>{{ $q->business_type }}</td>
                         <td>{{ $q->village }}</td>
                         <td>{{ $q->commune }}</td>
