@@ -61,7 +61,7 @@
                 <ul class="dropdown-menu ml-2 p-0" style="display:block; margin: 0 auto; width: 99%">
                     @foreach($data as $dt)
                         <li class="autocomplete">
-                            <a href="#" wire:click="selectService({{ $dt->id }}, '{{ $dt->namekh }}')" >
+                            <a href="#" wire:click="selectService({{ $dt->ser_id }}, '{{ $dt->namekh }}')" >
                                 <div class="d-flex">
                                     <div class="text-sm text-muted pt-2">
                                         <h6 class="mb-0">
