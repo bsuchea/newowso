@@ -179,16 +179,19 @@
     top: 599px;
     left: 835px;
 }
+
 .t11 {
     font-size: 12px;
-    top: 695px;
+    top: 675px;
     left: 125px;
 }
+
 .t21 {
     font-size: 11px;
-    top: 647px;
+    top: 697px;
     left: 125px;
 }
+
 .photobox{
     position: absolute;
     width: 85px;
@@ -261,7 +264,7 @@
         <span class="t10 font-head">អភិបាលក្រុង </span>
 <span class="t21">
             @if(!is_null($tran->barcode))
-                {!!   DNS1D::getBarcodeSVG($tran->barcode, 'C128', 2,35) !!}
+                {!!   DNS1D::getBarcodeSVG($tran->barcode, 'C128', 1.3,30) !!}
             @endif
         </span>
         <span class="t11">បញ្ជាក់៖ បណ្ណអនុញ្ញាតនេះត្រូវដាក់តាំង ឬ ព្យួរនៅកន្លែងទទួលភ្ញៀវ  </span>
