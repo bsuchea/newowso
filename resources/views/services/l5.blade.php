@@ -196,7 +196,7 @@
             ក្រុង{{ $cus->district->namekh }}
             ខេត្ដ{{ $cus->province->namekh }}។
             ធ្វើអាជីវកម្មលក់ <name class="font-head namekh"> {{ $ser_type->namekh }} </name>
-            ស្លាកយីហោ <name class="font-head namekh"> {{ $ser->brand_namekh }} </name>
+            ស្លាកយីហោ <name class="font-head namekh"> {{ $ser->brand_namekh }} <b>{{ $ser->brand_nameen==''?'':'- '.$ser->brand_nameen }}  </b></name>
             មានទីតាំងស្ថិតនៅ {{ $ser->home==''?'':'ផ្ទះលេខ'.$ser->home }}
               {{ $ser->street==''?'':'ផ្លូវ'.$ser->street }}
               {{ $ser->group==''?'':'ក្រុមទី'.$ser->group }}
