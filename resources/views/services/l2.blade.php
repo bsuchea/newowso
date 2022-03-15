@@ -146,6 +146,11 @@
     left: 125px;
 }
 
+.t21 {
+    font-size: 11px;
+    top: 647px;
+    left: 125px;
+}
 .num{
     font-family: "Khmer", "Khmer OS Battambang", "Khmer OS Siemreap";
     position: absolute;
@@ -230,8 +235,13 @@ input[type="text"]:focus {
          <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">
         <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">
         <span class="t10 font-head">អភិបាលក្រុង </span>
-        <span class="t11">បញ្ជាក់៖ បណ្ណអនុញ្ញាតនេះត្រូវដាក់តាំង ឬ ព្យួរនៅកន្លែងទទួលភ្ញៀវ  </span>
+        <span class="t11"> បញ្ជាក់៖ បណ្ណអនុញ្ញាតនេះត្រូវដាក់តាំង ឬ ព្យួរនៅកន្លែងទទួលភ្ញៀវ  </span>
 
+        <span class="t21">
+            @if(!is_null($tran->barcode))
+                {!!   DNS1D::getBarcodeSVG($tran->barcode, 'C128', 2,35) !!}
+            @endif
+        </span>
     </div>
 
 <script src="/js/taskpane.js"></script>

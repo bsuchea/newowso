@@ -49,6 +49,7 @@ class ServiceEdit extends Component
         $date_in, $date_out,
         $letter_number,
         $amount,
+        $barcode,
         $customer_id,
         $search_customer = '';
 
@@ -61,6 +62,7 @@ class ServiceEdit extends Component
         $this->date_in = $ser->date_in;
         $this->date_out = $ser->date_out;
         $this->letter_number = $ser->letter_number;
+        $this->barcode = $ser->barcode;
         $this->amount = $ser->amount;
         $this->service_type_id = $ser->service_type_id;
         $this->sector_id = $ser->sector_id;
@@ -183,6 +185,7 @@ class ServiceEdit extends Component
         $st->date_in = $this->date_in;
         $st->date_out = $this->date_out;
         $st->letter_number = $this->letter_number;
+        $st->barcode = $this->barcode;
         $st->amount = $this->amount;
         $st->save();
 

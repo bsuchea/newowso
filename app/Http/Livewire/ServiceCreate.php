@@ -44,7 +44,7 @@ class ServiceCreate extends Component
         $home,
         $phone;
 
-    public $date_in, $date_out, $letter_number, $amount;
+    public $date_in, $date_out, $letter_number, $amount, $barcode;
 
     public $service_id, $customer_id, $search_customer = '', $search_string = '';
 
@@ -160,6 +160,7 @@ class ServiceCreate extends Component
         $st->date_in = $this->date_in;
         $st->date_out = $this->date_out;
         $st->letter_number = $this->letter_number;
+        $st->barcode = $this->barcode;
         $st->amount = $this->amount;
         $st->save();
 

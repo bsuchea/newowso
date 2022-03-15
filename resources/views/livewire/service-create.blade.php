@@ -31,6 +31,11 @@
                 <input wire:model="amount" type="number" name="amount" id="amount" class="{{ $errors->has('amount') ? 'form-control is-invalid' : 'form-control' }}">
                 <x-form.error key="amount"/>
             </div>
+            <div class="col">
+                <label for="letter_number">{{ __('Barcode') }} </label>
+                <x-form.input name="barcode"/>
+                <x-form.error key="barcode"/>
+            </div>
         </div>
         <div class="row">
             <div class="col">
