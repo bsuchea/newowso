@@ -27,77 +27,77 @@
             position: absolute;
         }
 .h1 {
-    top: 95px;
+    top: 98px;
     left: 508px;
 }
 .h2 {
-    top: 122px;
+    top: 125px;
     left: 488px;
 }
 .img001{
     position: absolute;
-    top: 154px;
+    top: 157px;
     left: 521px;
 }
 .h3 {
-    top: 140px;
+    top: 143px;
     left: 150px;
 }
 .h4 {
-    top: 165px;
+    top: 168px;
     left: 120px;
 }
 .h5 {
-    top: 190px;
+    top: 193px;
     left: 75px;
     width: 260px;
     text-align: center;
 }
 .h6 {
-    top: 203px;
+    top: 206px;
     left: 535px;
     font-size: 20px;
 }
 
 .h7 {
-    top: 238px;
+    top: 241px;
     left: 425px;
     font-size: 18px;
 }
 .t1 {
     font-size: 14px;
-    top: 278px;
+    top: 281px;
     left: 150px;
 }
 .t2 {
     font-size: 14px;
-    top: 278px;
+    top: 281px;
     left: 215px;
 }
 .t3 {
     font-size: 14px;
-    top: 303px;
+    top: 306px;
     left: 215px;
 }
 .t4 {
     font-size: 14px;
-    top: 326px;
+    top: 329px;
     left: 215px;
 }
 .t5 {
     font-size: 14px;
-    top: 352px;
+    top: 355px;
     left: 222px;
 }
 .t6 {
     font-size: 14px;
-    top: 375px;
+    top: 378px;
     left: 215px;
 }
 
 .text1 {
     width: 915px;
-    top: 407px;
+    top: 410px;
     left: 150px;
 }
 
@@ -109,11 +109,11 @@
 }
 
 .t7 {
-    top: 491px;
+    top: 494px;
     left: 215px;
 }
 .t12 {
-    top: 520px;
+    top: 523px;
     left: 215px;
 }
 
@@ -129,26 +129,26 @@
     left: 670px;
 }
 .t8 {
-    top: 550px;
+    top: 553px;
 }
 .t9 {
-    top: 574px;
+    top: 577px;
 }
 
 .t10 {
-    top: 599px;
+    top: 602px;
     left: 835px;
 }
 
 .t11 {
     font-size: 12px;
-    top: 675px;
+    top: 678px;
     left: 125px;
 }
 
 .t21 {
     font-size: 11px;
-    top: 697px;
+    top: 700px;
     left: 125px;
 }
 
