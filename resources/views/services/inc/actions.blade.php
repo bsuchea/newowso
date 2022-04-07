@@ -1,9 +1,6 @@
 @can('show_services')
 <a href="{{ route('services.print.lic', $service->id) }}" target="_blank" class="btn btn-sm"><i class="fa fa-print"></i></a>
 @endcan
-@can('show_services')
-<a href="{{ route('services.print.dis', $service->id) }}" target="_blank" class="btn btn-sm"><i class="fa fa-file-alt"></i></a>
-@endcan
 @can('edit_services')
 <a href="{{ route('services.edit', $service->id) }}" class="btn btn-sm"><i class="fa fa-edit"></i></a>
 @endcan

@@ -10,31 +10,14 @@
         </div>
         <div class="row">
             <div class="col">
-                <label for="date_in">{{ __('Date in') }} <span class="text-danger">*</span></label>
-                <input wire:model="date_in" class="form-control" type="date" name="date_in" id="date_in">
-                <x-form.error key="date_in"/>
-            </div>
-            <div class="col">
-                <label for="date_out">{{ __('Date out') }} <span class="text-danger">*</span></label>
-                <input wire:model="date_out" type="date" name="date_out" id="date_out" class="{{ $errors->has('date_out') ? 'form-control is-invalid' : 'form-control' }}">
-                <x-form.error key="date_out"/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <label for="letter_number">{{ __('Letter Number') }} <span class="text-danger">*</span></label>
-                <x-form.input name="letter_number"/>
-                <x-form.error key="letter_number"/>
+                <label for="letter_number">{{ __('Barcode') }} </label>
+                <x-form.input name="barcode"/>
+                <x-form.error key="barcode"/>
             </div>
             <div class="col">
                 <label for="amount">{{ __('Amount') }} ({{ __('gauge') }})</label>
                 <input wire:model="amount" type="number" name="amount" id="amount" class="{{ $errors->has('amount') ? 'form-control is-invalid' : 'form-control' }}">
                 <x-form.error key="amount"/>
-            </div>
-            <div class="col">
-                <label for="letter_number">{{ __('Barcode') }} </label>
-                <x-form.input name="barcode"/>
-                <x-form.error key="barcode"/>
             </div>
         </div>
         <div class="row">

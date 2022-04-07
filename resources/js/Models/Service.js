@@ -4,21 +4,14 @@ import helper from "../Core/Helper";
 // Datatable Column Defs
 
 var columnDefs = [{
-    "targets": 5,
+    "targets": 3,
     "orderable": false
 }, {
     "searchable": false,
-    "targets": [0, 5]
+    "targets": [0, 3]
 }]; // Datatable Columns
 
-var columns = [
-    {
-    data: 'date_out',
-    name: 'date_out'
-}, {
-    data: 'letter_number',
-    name: 'letter_number'
-}, {
+var columns = [ {
     data: 'namekh',
     name: 'namekh'
 }, {

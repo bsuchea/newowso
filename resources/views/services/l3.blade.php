@@ -197,17 +197,15 @@ input[type="text"]:focus {
         <span class="h1 font-head">ព្រះរាជាណាចក្រកម្ពុជា</span>
         <span class="h2 font-head">ជាតិ សាសនា ព្រះមហាក្សត្រ</span>
         <img src="/img/img001.png" class="img001" alt="">
-        <span class="h3 font-head">ខេត្តបាត់ដំបង</span>
-        <span class="h4 font-head">រដ្ឋបាលក្រុងបាត់ដំបង</span>
-
-{{--        <span class="h5">លេខៈ .......................កបប</span>--}}
-
-        <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>
-
+        <span class="h3 font-head">{{ $pro }}</span>
+        <span class="h4 font-head">រដ្ឋបាល{{ $dis }}</span>
+        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </span>
+{{--        <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>--}}
+...
 {{--        <input type="text" class="num">--}}
         <span class="h6 font-head">បណ្ណអនុញ្ញាត</span>
         <span class="h7 font-head">ប្រកបអាជីវកម្ម-សេវាកម្ម-ទេសចរណ៍ </span>
-        <span class="h8 font-head">អភិបាលក្រុងបាត់ដំបង</span>
+        <span class="h8 font-head">អភិបាល{{ $dis }}</span>
         <span class="n1">អនុញ្ញាតឱ្យ លោក-លោកស្រី </span>
         <span class="name">: <ls class="font-head">{{ $cus->namekh }}
             </ls>&ensp;&ensp;&ensp;&ensp;&ensp; អក្សរឡាតាំង &ensp;&ensp;<b style="font-family: centuary"> {{ $cus->nameen }} </b> </span>
@@ -237,15 +235,18 @@ input[type="text"]:focus {
         </span>
         <span class="t7">
             បណ្ណអនុញ្ញាតសេវាកម្មនេះមានសុពលភាពត្រឹម
-{{--            ថ្ងៃទី...... ខែ.......... ឆ្នាំ២០២...។--}}
-            {{ dateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period)) }}។
+            <b>
+            ថ្ងៃទី &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            ខែ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            ឆ្នាំ២០២&nbsp;&nbsp;&nbsp;&nbsp;
+{{--            {{ dateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period)) }}--}}
+            </b> ។
         </span>
 
-{{--        <input class="t8" value="ថ្ងៃ......................... ខែ............ ឆ្នាំឆ្លូវ ត្រី​ស័ក ព.ស.២៥៦៥" id="lunar_date">--}}
-{{--        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី....... ខែ........... ឆ្នាំ២០២២">--}}
-
-        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">
-        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">
+        <input class="t8" value="ថ្ងៃ                              ខែ                      ឆ្នាំ                ស័ក ព.ស.២៥៦    " id="lunar_date">
+        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី             ខែ                 ឆ្នាំ២០២   ">
+{{--        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">--}}
+{{--        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">--}}
         <span class="t10 font-head">អភិបាលក្រុង </span>
         <span class="t21">
             @if(!is_null($tran->barcode))

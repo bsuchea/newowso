@@ -35,7 +35,6 @@
                 <table class="table dt-responsive nowrap ">
                     <thead>
                     <tr>
-                        <th>{{ __('Letter Number') }}</th>
                         <th>{{ __('Customer Name') }}</th>
                         <th>{{ __('Gender') }}</th>
                         <th>{{ __('Brand Name') }}</th>
@@ -43,14 +42,12 @@
                         <th>{{ __('Village') }}</th>
                         <th>{{ __('Commune') }}</th>
                         <th>{{ __('Service Type') }}</th>
-                        <th>{{ __('Date out') }}</th>
                         <th>{{ __('Phone') }}</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($query as $q)
                     <tr>
-                        <td>{{ $q->letter_number }}</td>
                         <td>{{ $q->namekh }}</td>
                         <td>{{ $q->gender }}</td>
                         <td>{{ $q->brand_namekh }}</td>
@@ -58,7 +55,6 @@
                         <td>{{ $q->village }}</td>
                         <td>{{ $q->commune }}</td>
                         <td>{{ $q->service_type }}</td>
-                        <td>{{ $q->date_out }}</td>
                         <td>{{ $q->phone }}</td>
                     </tr>
                     @endforeach

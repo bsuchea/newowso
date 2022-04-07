@@ -44,7 +44,7 @@ class ServiceCreate extends Component
         $home,
         $phone;
 
-    public $date_in, $date_out, $letter_number, $amount, $barcode;
+    public $amount, $barcode;
 
     public $service_id, $customer_id, $search_customer = '', $search_string = '';
 
@@ -67,8 +67,7 @@ class ServiceCreate extends Component
     {
         if($this->new == 0){
             $this->validate([
-                'letter_number' => 'required',
-                'date_out' => 'required',
+                'barcode' => 'required',
             ]);
 
             $this->insertServiceTransection();
@@ -77,8 +76,7 @@ class ServiceCreate extends Component
             if($this->customer_new == 0){
 
                 $this->validate([
-                    'letter_number' => 'required',
-                    'date_out' => 'required',
+                    'barcode' => 'required',
                     'service_type_id' => 'required',
                     'village_id' => 'required',
                 ]);
@@ -89,8 +87,7 @@ class ServiceCreate extends Component
             }else{
 
                 $this->validate([
-                    'letter_number' => 'required',
-                    'date_out' => 'required',
+                    'barcode' => 'required',
                     'service_type_id' => 'required',
                     'village_id' => 'required',
                     'customer_namekh' => 'required',

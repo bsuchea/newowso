@@ -6,7 +6,7 @@
 
     <div class="row g-4">
         <div class="col-7">
-            <livewire:edit-date />
+            <livewire:options />
         </div>
         <div class="col-5">
 

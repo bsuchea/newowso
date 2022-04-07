@@ -46,8 +46,6 @@ class ServiceEdit extends Component
 
     public $tran_id,
         $service_id,
-        $date_in, $date_out,
-        $letter_number,
         $amount,
         $barcode,
         $customer_id,
@@ -59,9 +57,6 @@ class ServiceEdit extends Component
                     ->where('service_transections.id', '=', $this->tran_id)
                     ->first();
         $this->service_id = $ser->service_id;
-        $this->date_in = $ser->date_in;
-        $this->date_out = $ser->date_out;
-        $this->letter_number = $ser->letter_number;
         $this->barcode = $ser->barcode;
         $this->amount = $ser->amount;
         $this->service_type_id = $ser->service_type_id;
@@ -94,8 +89,6 @@ class ServiceEdit extends Component
         if($this->customer_new == 0){
 
             $this->validate([
-                    'letter_number' => 'required',
-                    'date_out' => 'required',
                     'service_type_id' => 'required',
                     'village_id' => 'required',
                 ]);
@@ -105,8 +98,6 @@ class ServiceEdit extends Component
         }else{
 
             $this->validate([
-                    'letter_number' => 'required',
-                    'date_out' => 'required',
                     'service_type_id' => 'required',
                     'village_id' => 'required',
                     'customer_namekh' => 'required',
@@ -182,9 +173,6 @@ class ServiceEdit extends Component
 
         $st = ServiceTransection::find($this->tran_id);
         $st->service_id = $this->service_id;
-        $st->date_in = $this->date_in;
-        $st->date_out = $this->date_out;
-        $st->letter_number = $this->letter_number;
         $st->barcode = $this->barcode;
         $st->amount = $this->amount;
         $st->save();

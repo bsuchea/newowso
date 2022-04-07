@@ -196,38 +196,10 @@ class ServiceController extends Controller
             'ser_type' => $ser_type,
             'com2' => $com2,
             'vil2' => $vil2,
-            'date_kh' => $op[0]['name'],
-            'date' => $op[1]['name'],
+            'pro' => $op[0]['name'],
+            'dis' => $op[1]['name'],
             'sec' => $sec
 
-        ]);
-
-    }
-
-    public function printDis($id)
-    {
-
-        $tran = ServiceTransection::find($id);
-
-        $ser = Service::find($tran->service_id);
-        $ser_type = $ser->service_type()->first();
-        $com2 = $ser->commune()->first();
-        $vil2 = $ser->village()->first();
-
-        $cus = Customer::find($ser->customer_id);
-        $op = Option::all();
-        $sec = Sector::find($ser_type->sector_id);
-
-        return view("services.d")->with([
-            'tran' => $tran,
-            'cus' => $cus,
-            'ser' => $ser,
-            'ser_type' => $ser_type,
-            'com2' => $com2,
-            'vil2' => $vil2,
-            'date_kh' => $op[0]['name'],
-            'date' => $op[1]['name'],
-            'sec' => $sec
         ]);
 
     }

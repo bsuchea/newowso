@@ -30,10 +30,9 @@ class ReportServices extends Component
         $sec = Sector::all();
 
         $this->query = VServiceExport::query()
-            ->whereBetween('date_out', [$this->fromdate, $this->todate])
+            ->whereBetween('created_at', [$this->fromdate, $this->todate])
             ->whereNull('deleted_at' )
             ->where('sector_id', '=', $this->sector_id)
-            ->orderBy('letter_number')
             ->get();
 
         return view('livewire.report-services', [
