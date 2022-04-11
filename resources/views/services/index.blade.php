@@ -24,6 +24,7 @@
                 </div>
             </div>
             <x-datatable url="{{ route('services.dataTable', ['trash' => request('trash')]) }}" :thead="[
+                __('Created at'),
                 __('Customer Name'),
                 __('Brand Name'),
                 __('Service Type'),
