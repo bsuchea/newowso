@@ -154,9 +154,6 @@ class ServiceCreate extends Component
 
         $st = new ServiceTransection();
         $st->service_id = $this->service_id;
-        $st->date_in = $this->date_in;
-        $st->date_out = $this->date_out;
-        $st->letter_number = $this->letter_number;
         $st->barcode = $this->barcode;
         $st->amount = $this->amount;
         $st->save();
