@@ -160,10 +160,10 @@ class ServiceController extends Controller
 
     public function dataTable()
     {
-        $query = DB::table('v_service_details')->whereNull('deleted_at')->orderByDesc('date_out')->get();
+        $query = DB::table('v_service_details')->whereNull('deleted_at')->orderByDesc('created_at')->get();
 
         if (!empty(\request('trash'))) {
-            $query = DB::table('v_service_details')->whereNotNull('deleted_at')->orderByDesc('date_out')->get();
+            $query = DB::table('v_service_details')->whereNotNull('deleted_at')->orderByDesc('created_at')->get();
         }
 
         return DataTables::of($query)
