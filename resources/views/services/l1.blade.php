@@ -28,16 +28,16 @@
         }
 .h1 {
     top: 148px;
-    left: 875px;
+    left: 870px;
 }
 .h2 {
     top: 175px;
-    left: 854px;
+    left: 850px;
 }
 .img001{
     position: absolute;
     top: 208px;
-    left: 895px;
+    left: 890px;
 }
 .h3 {
     top: 190px;
@@ -151,7 +151,7 @@
     text-align: center;
     width: 420px;
     height: 30px;
-    left: 670px;
+    left: 665px;
 }
 .t8 {
     top: 550px;
@@ -162,7 +162,7 @@
 
 .t10 {
     top: 599px;
-    left: 835px;
+    left: 830px;
 }
 
 .t11 {
@@ -245,7 +245,7 @@
         </span>
         <span class="t7">មុនផុតកំណត់រយៈពេល១៥ថ្ងៃ អាជីវករត្រូវ មកដាក់សុំបន្តអាជីវកម្មនៅឆ្នាំបន្ទាប់។ </span>
 
-        <input class="t8" value="ថ្ងៃ                              ខែ                      ឆ្នាំ                ស័ក ព.ស.២៥៦    " id="lunar_date">
+        <input class="t8" value="ថ្ងៃ                           ខែ                  ឆ្នាំ              ស័ក ព.ស.២៥៦    " id="lunar_date">
         <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី             ខែ                 ឆ្នាំ២០២   ">
 {{--        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">--}}
 {{--        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">--}}
