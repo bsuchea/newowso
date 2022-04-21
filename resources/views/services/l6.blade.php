@@ -276,14 +276,7 @@
 
     </div>
 
-<script src="/js/taskpane.js"></script>
 <script type="application/javascript">
-    var date = document.getElementById('lunar_date').value;
-    // var date = "23/10/2021"
-    var selectedDate = new Date(date.split("/")[2],(parseInt(date.split("/")[1])-1),date.split("/")[0] );
-    var solarText = new LunarText().getKhmerLunarString(selectedDate);
-    document.getElementById('lunar_date').value = solarText;
-
     window.onafterprint = function () { window.close(); }
 </script>
 
