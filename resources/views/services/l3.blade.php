@@ -243,7 +243,7 @@ input[type="text"]:focus {
             </b> ។
         </span>
 
-        <input class="t8" value="ថ្ងៃ                  ខែ            ឆ្នាំខាល ចត្វាស័ក ព.ស.២៥៦  " id="lunar_date">
+        <input class="t8" value="ថ្ងៃ                       ខែ              ឆ្នាំខាល ចត្វាស័ក ព.ស.២៥៦  " id="lunar_date">
         <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២២  ">
 {{--        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">--}}
 {{--        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">--}}
