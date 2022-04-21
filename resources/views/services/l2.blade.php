@@ -232,8 +232,8 @@ input[type="text"]:focus {
             ។
         </span>
 
-        <input class="t8" value="ថ្ងៃ                              ខែ                      ឆ្នាំ                ស័ក ព.ស.២៥៦    " id="lunar_date">
-        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី             ខែ                 ឆ្នាំ២០២   ">
+        <input class="t8" value="ថ្ងៃ                  ខែ            ឆ្នាំខាល ចត្វាស័ក ព.ស.២៥៦  " id="lunar_date">
+        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២២  ">
 {{--         <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">--}}
 {{--        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">--}}
 
@@ -249,11 +249,11 @@ input[type="text"]:focus {
 
 <script src="/js/taskpane.js"></script>
 <script type="application/javascript">
-    var date = document.getElementById('lunar_date').value;
+    // var date = document.getElementById('lunar_date').value;
     // var date = "23/10/2021"
-    var selectedDate = new Date(date.split("/")[2],(parseInt(date.split("/")[1])-1),date.split("/")[0] );
-    var solarText = new LunarText().getKhmerLunarString(selectedDate);
-    document.getElementById('lunar_date').value = solarText;
+    // var selectedDate = new Date(date.split("/")[2],(parseInt(date.split("/")[1])-1),date.split("/")[0] );
+    // var solarText = new LunarText().getKhmerLunarString(selectedDate);
+    // document.getElementById('lunar_date').value = solarText;
 
     window.onafterprint = function () { window.close(); }
 </script>
