@@ -226,7 +226,7 @@ input[type="text"]:focus {
             <b>
             ថ្ងៃទី &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             ខែ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            ឆ្នាំ{{ formatDateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period), 'y') }}
+            ឆ្នាំ{{ formatDateKh(\Carbon\Carbon::make(today())->addYears($ser_type->validity_period), 'y') }}
             </b>
             ។
         </span>

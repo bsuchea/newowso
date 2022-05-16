@@ -258,7 +258,7 @@
             មានប្រសិទ្ធិភាពត្រឹម <b>
             ថ្ងៃទី &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             ខែ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            ឆ្នាំ{{ formatDateKh(\Carbon\Carbon::make($tran->date_out)->addYears($ser_type->validity_period), 'y') }}
+            ឆ្នាំ{{ formatDateKh(\Carbon\Carbon::make(today())->addYears($ser_type->validity_period), 'y') }}
             </b>។
         </span>
         <span class="t7">មុនផុតកំណត់ពីរខែ សាម៉ីជនត្រូវអញ្ជើញមកបន្តសុពលភាពសម្រាប់ប្រើប្រាស់ជាថ្មី ។ </span>
