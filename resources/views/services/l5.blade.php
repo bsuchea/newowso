@@ -192,9 +192,9 @@
               {{ $cus->street==''?'':'ផ្លូវ'.$cus->street }}
               {{ $cus->group==''?'':'ក្រុមទី'.$cus->group }}
             ភូមិ{{ $cus->village->namekh }}
-            សង្កាត់{{ $cus->commune->namekh }}
-            ក្រុង{{ $cus->district->namekh }}
-            ខេត្ដ{{ $cus->province->namekh }}។
+            {{ $cus->commune->type=='ក្រុង'?'សង្កាត់':'ឃុំ' }}{{ $cus->commune->namekh }}
+            {{ $cus->district->type }}{{ $cus->district->namekh }}
+            {{ $cus->province->type }}{{ $cus->province->namekh }}។
             ធ្វើអាជីវកម្មលក់ <name class="font-head namekh"> {{ $ser_type->namekh }} </name>
             ស្លាកយីហោ <name class="font-head namekh"> {{ $ser->brand_namekh }} <b>{{ $ser->brand_nameen==''?'':'- '.$ser->brand_nameen }}  </b></name>
             មានទីតាំងស្ថិតនៅ {{ $ser->home==''?'':'ផ្ទះលេខ'.$ser->home }}
