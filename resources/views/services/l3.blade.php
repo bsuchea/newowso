@@ -54,29 +54,29 @@
     text-align: center;
 }
 .h6 {
-    top: 215px;
+    top: 185px;
     left: 510px;
     font-size: 23px;
 }
 
 .h7 {
-    top: 253px;
-    left: 420px;
+    top: 223px;
+    left: 385px;
     font-size: 20px;
 }
 
 .h8 {
-    top: 288px;
+    top: 258px;
     left: 502px;
     font-size: 18px;
 }
 
 .n1 {
-    top: 330px;
+    top: 300px;
     left: 200px;
 }
 .name {
-    top: 325px;
+    top: 295px;
     left: 425px;
 }
 .name ls{
@@ -86,30 +86,34 @@
     text-transform: uppercase;
 }
 .s1 {
-    top: 363px;
+    top: 333px;
     left: 200px;
 }
 .ser_type {
-    top: 360px;
+    top: 330px;
     left: 425px;
 }
 .b1 {
-    top: 397px;
+    top: 367px;
     left: 200px;
 }
 .brand {
-    top: 394px;
+    top: 364px;
     left: 425px;
 }
 .a1 {
-    top: 428px;
+    top: 398px;
     left: 200px;
 }
 .addr {
-    top: 428px;
+    top: 398px;
     left: 425px;
 }
 .t6 {
+    top: 432px;
+    left: 200px;
+}
+.t61 {
     top: 462px;
     left: 200px;
 }
@@ -201,10 +205,9 @@ input[type="text"]:focus {
         <span class="h4 font-head">រដ្ឋបាល{{ $dis }}</span>
         <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២២</sub> កបប</span>
 {{--        <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>--}}
-...
 {{--        <input type="text" class="num">--}}
         <span class="h6 font-head">បណ្ណអនុញ្ញាត</span>
-        <span class="h7 font-head">ប្រកបអាជីវកម្ម-សេវាកម្ម-ទេសចរណ៍ </span>
+        <span class="h7 font-head">ប្រកបអាជីវកម្ម-សេវាកម្ម-វិស័យទេសចរណ៍ </span>
         <span class="h8 font-head">អភិបាល{{ $dis }}</span>
         <span class="n1">អនុញ្ញាតឱ្យ លោក-លោកស្រី </span>
         <span class="name">: <ls class="font-head">{{ $cus->namekh }}
@@ -228,7 +231,10 @@ input[type="text"]:focus {
             ភូមិ{{ $vil2->namekh }} សង្កាត់{{ $com2->namekh }} ក្រុងបាត់ដំបង ខេត្ដបាត់ដំបង។
         </span>
         <span class="t6">
-            អ្នកកាន់បណ្ណអនុញ្ញាតត្រូវគោរពយ៉ាងម៉ឺងម៉ាត់តាមច្បាប់ និង បទបញ្ញត្តិផ្សេងៗ ហើយត្រូវដាក់តាំងបង្ហាញជាសាធារណៈ  ។
+            អ្នកកាន់បណ្ណអនុញ្ញាតត្រូវគោរពយ៉ាងម៉ឺងម៉ាត់តាមច្បាប់ និង បទបញ្ញត្តិផ្សេងៗ។
+        </span>
+        <span class="t61">
+            មុនផុតកំណត់រយៈពេល ៣០ថ្ងៃ អាជីវករ-សេវាករត្រូវមកដាក់ពាក្យសុំបន្ដបណ្ណអនុញ្ញាតអាជីវកម្ម-សេវាកម្ម។
         </span>
         <span class="t62">
             បំរាមៈ ហាមជួញដូរ និងប្រើប្រាស់គ្រឿងញៀន-ហាមជួញដូរផ្លូវភេទ-ហាមការកេងប្រវ័ញ្ញពលកម្មកុមារ និងត្រូវបិទស្លាកហាមជក់បារី។
