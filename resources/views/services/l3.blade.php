@@ -54,30 +54,24 @@
     text-align: center;
 }
 .h6 {
-    top: 185px;
-    left: 510px;
+    top: 210px;
+    left: 485px;
     font-size: 23px;
 }
 
 .h7 {
-    top: 223px;
-    left: 385px;
-    font-size: 20px;
-}
-
-.h8 {
-    top: 258px;
-    left: 502px;
-    font-size: 18px;
+    top: 249px;
+    left: 513px;
+    font-size: 19px;
 }
 
 .n1 {
     top: 300px;
-    left: 200px;
+    left: 260px;
 }
 .name {
     top: 295px;
-    left: 425px;
+    left: 465px
 }
 .name ls{
     font-size: 18px;
@@ -87,43 +81,39 @@
 }
 .s1 {
     top: 333px;
-    left: 200px;
+    left: 260px;
 }
 .ser_type {
     top: 330px;
-    left: 425px;
+    left: 465px
 }
 .b1 {
     top: 367px;
-    left: 200px;
+    left: 260px;
 }
 .brand {
     top: 364px;
-    left: 425px;
+    left: 465px
 }
 .a1 {
     top: 398px;
-    left: 200px;
+    left: 260px;
 }
 .addr {
     top: 398px;
-    left: 425px;
+    left: 465px
 }
 .t6 {
     top: 432px;
-    left: 200px;
+    left: 260px;
 }
 .t61 {
-    top: 462px;
-    left: 200px;
-}
-.t62 {
-    top: 490px;
-    left: 200px;
+    top: 464px;
+    left: 260px;
 }
 .t7 {
-    top: 520px;
-    left: 200px;
+    top: 490px;
+    left: 260px;
 }
 .t8 , .t9 {
     font-family: "Khmer", "Khmer OS Battambang", "Khmer OS Siemreap";
@@ -137,40 +127,30 @@
     padding: 10px;
 }
 .t8{
-    top: 536px;
+    top: 492px;
 }
 .t9 {
-    top: 567px;
+    top: 523px;
 }
 
 .t10 {
-    top: 601px;
+    top: 563px;
     left: 825px;
 }
 
 
 .t11 {
     font-size: 12px;
-    top: 675px;
+    top: 660px;
     left: 125px;
 }
 
 .t21 {
     font-size: 11px;
-    top: 697px;
+    top: 683px;
     left: 125px;
 }
-.num{
-    font-family: "Khmer", "Khmer OS Battambang", "Khmer OS Siemreap";
-    position: absolute;
-    font-size: 17px;
-    border: none;
-    background: none;
-    text-align: center;
-    top: 200px;
-    left: 185px;
-    width: 125px;
-}
+
 input[type="text"]:focus {
     outline: 0px;
 }
@@ -181,8 +161,8 @@ input[type="text"]:focus {
     height: 105px;
     text-align: center;
     border: 1px solid #1a202c;
-    top: 215px;
-    left: 933px;
+    top: 315px;
+    left: 140px;
 }
 
 @media print {
@@ -204,11 +184,9 @@ input[type="text"]:focus {
         <span class="h3 font-head">{{ $pro }}</span>
         <span class="h4 font-head">រដ្ឋបាល{{ $dis }}</span>
         <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២២</sub> កបប</span>
-{{--        <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>--}}
-{{--        <input type="text" class="num">--}}
-        <span class="h6 font-head">បណ្ណអនុញ្ញាត</span>
-        <span class="h7 font-head">ប្រកបអាជីវកម្ម-សេវាកម្ម-វិស័យទេសចរណ៍ </span>
-        <span class="h8 font-head">អភិបាល{{ $dis }}</span>
+
+        <span class="h6 font-head">អាជ្ញាបណ្ណទេសចរណ៍</span>
+        <span class="h7">TOURISM LICENSE</span>
         <span class="n1">អនុញ្ញាតឱ្យ លោក-លោកស្រី </span>
         <span class="name">: <ls class="font-head">{{ $cus->namekh }}
             </ls>&ensp;&ensp;&ensp;&ensp;&ensp; អក្សរឡាតាំង &ensp;&ensp;<b style="font-family: centuary"> {{ $cus->nameen }} </b> </span>
@@ -231,23 +209,16 @@ input[type="text"]:focus {
             ភូមិ{{ $vil2->namekh }} សង្កាត់{{ $com2->namekh }} ក្រុងបាត់ដំបង ខេត្ដបាត់ដំបង។
         </span>
         <span class="t6">
-            អ្នកកាន់បណ្ណអនុញ្ញាតត្រូវគោរពយ៉ាងម៉ឺងម៉ាត់តាមច្បាប់ និង បទបញ្ញត្តិផ្សេងៗ។
-        </span>
-        <span class="t61">
-            មុនផុតកំណត់រយៈពេល ៣០ថ្ងៃ អាជីវករ-សេវាករត្រូវមកដាក់ពាក្យសុំបន្ដបណ្ណអនុញ្ញាតអាជីវកម្ម-សេវាកម្ម។
-        </span>
-        <span class="t62">
-            បំរាមៈ ហាមជួញដូរ និងប្រើប្រាស់គ្រឿងញៀន-ហាមជួញដូរផ្លូវភេទ-ហាមការកេងប្រវ័ញ្ញពលកម្មកុមារ និងត្រូវបិទស្លាកហាមជក់បារី។
-        </span>
-        <span class="t7">
-            បណ្ណអនុញ្ញាតសេវាកម្មនេះមានសុពលភាពត្រឹម
+            អាជ្ញាបណ្ណនេះមានសុពលភាពត្រឹម
             <b>
             ថ្ងៃទី &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             ខែ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             ឆ្នាំ{{ formatDateKh(\Carbon\Carbon::make(today())->addYears($ser_type->validity_period), 'y') }}
-            </b> ។
+            </b>
         </span>
-
+        <span class="t61">
+            សមីខ្លួនត្រូវអនុវត្តឱ្យបានត្រឹមត្រូវតាមបទប្បញ្ញត្តិជាធមាន នឹងត្រូវមកបន្ដសុពលភាពឱ្យបានមុន ៣០ថ្ងៃ នៃថ្ងៃផុតកំណត់។
+        </span>
         <input class="t8" value="ថ្ងៃ                       ខែ              ឆ្នាំខាល ចត្វាស័ក ព.ស.២៥៦៦" id="lunar_date">
         <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២២  ">
 {{--        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">--}}
