@@ -60,7 +60,7 @@
 }
 
 .h7 {
-    top: 249px;
+    top: 250px;
     left: 513px;
     font-size: 19px;
 }
@@ -108,11 +108,11 @@
     left: 260px;
 }
 .t61 {
-    top: 464px;
+    top: 462px;
     left: 260px;
 }
 .t7 {
-    top: 490px;
+    top: 491px;
     left: 260px;
 }
 .t8 , .t9 {
@@ -127,27 +127,27 @@
     padding: 10px;
 }
 .t8{
-    top: 492px;
+    top: 510px;
 }
 .t9 {
-    top: 523px;
+    top: 540px;
 }
 
 .t10 {
-    top: 563px;
+    top: 579px;
     left: 825px;
 }
 
 
 .t11 {
     font-size: 12px;
-    top: 660px;
+    top: 675px;
     left: 125px;
 }
 
 .t21 {
     font-size: 11px;
-    top: 683px;
+    top: 697px;
     left: 125px;
 }
 
@@ -186,7 +186,7 @@ input[type="text"]:focus {
         <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២២</sub> កបប</span>
 
         <span class="h6 font-head">អាជ្ញាបណ្ណទេសចរណ៍</span>
-        <span class="h7">TOURISM LICENSE</span>
+        <span class="h7 font-head">TOURISM LICENSE</span>
         <span class="n1">អនុញ្ញាតឱ្យ លោក-លោកស្រី </span>
         <span class="name">: <ls class="font-head">{{ $cus->namekh }}
             </ls>&ensp;&ensp;&ensp;&ensp;&ensp; អក្សរឡាតាំង &ensp;&ensp;<b style="font-family: centuary"> {{ $cus->nameen }} </b> </span>
@@ -218,6 +218,9 @@ input[type="text"]:focus {
         </span>
         <span class="t61">
             សមីខ្លួនត្រូវអនុវត្តឱ្យបានត្រឹមត្រូវតាមបទប្បញ្ញត្តិជាធមាន នឹងត្រូវមកបន្ដសុពលភាពឱ្យបានមុន ៣០ថ្ងៃ នៃថ្ងៃផុតកំណត់។
+        </span>
+        <span class="t7">
+                បំរាមៈ ហាមជួញដូរគ្រឿងញៀន-ផ្លូវភេទ ហាមកេងប្រវ័ញ្ញពលកម្មកុមារ និងត្រូវបិទស្លាកហាមជក់បារី។
         </span>
         <input class="t8" value="ថ្ងៃ                       ខែ              ឆ្នាំខាល ចត្វាស័ក ព.ស.២៥៦៦" id="lunar_date">
         <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២២  ">
