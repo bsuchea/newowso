@@ -204,7 +204,7 @@
         <span class="h3 font-head">{{ $pro }}</span>
         <span class="h4 font-head">រដ្ឋបាល{{ $dis }}</span>
 
-        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២២</sub> កបប</span>
+        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២៣</sub> វវស.កបប.</span>
 {{--        <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>--}}
 
         <div class="photobox"><br><br>4 x 6</div>
@@ -224,7 +224,7 @@
             @if($tran->amount != '') ចំនួន  {{ convertToKhmerNumber($tran->amount) }}{{ $ser_type->gauge }} @endif
         </span>
         <span class="b1">នាមករណ៍ </span>
-        <span class="brand">: <b>{{ $ser->brand_namekh }} {{ $ser->brand_nameen==''?'':'- '.$ser->brand_nameen }}  </b></span>
+        <span class="brand">: <b>{{ $ser->brand_namekh }} {{ $ser->brand_nameen==''?'':'('.$ser->brand_nameen.')' }}  </b></span>
         <span class="a1">អាសយដ្ឋានអាជីវកម្ម</span>
         <span class="addr">
             : {{ $ser->home==''?'':'ផ្ទះលេខ'.$ser->home }}
@@ -245,7 +245,7 @@
         <span class="t7">មុនផុតកំណត់រយៈពេល១៥ថ្ងៃ អាជីវករត្រូវ មកដាក់សុំបន្តអាជីវកម្មនៅឆ្នាំបន្ទាប់។ </span>
 
         <input class="t8" value="ថ្ងៃ                       ខែ              ឆ្នាំខាល ចត្វាស័ក ព.ស.២៥៦៦" id="lunar_date">
-        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២២  ">
+        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២៣  ">
 {{--        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">--}}
 {{--        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">--}}
         <span class="t10 font-head">អភិបាលក្រុង </span>

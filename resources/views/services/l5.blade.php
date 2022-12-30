@@ -169,7 +169,7 @@
         <img src="/img/img001.png" class="img001" alt="">
         <span class="h3 font-head">{{ $pro }}</span>
         <span class="h4 font-head">រដ្ឋបាល{{ $dis }}</span>
-        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២២</sub> កបប</span>
+        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២៣</sub> កសក.កបប.</span>
 {{--        <span class="h5">លេខៈ &nbsp;&nbsp; {{ $tran->letter_number }} &nbsp;&nbsp; កបប</span>--}}
 
 {{--        <div class="photobox"><br><br>4 x 6</div>--}}
@@ -196,7 +196,7 @@
             {{ $cus->district->type }}{{ $cus->district->namekh }}
             {{ $cus->province->type }}{{ $cus->province->namekh }}។
             ធ្វើអាជីវកម្មលក់ <name class="font-head namekh"> {{ $ser_type->namekh }} </name>
-            ស្លាកយីហោ <name class="font-head namekh"> {{ $ser->brand_namekh }} <b>{{ $ser->brand_nameen==''?'':'- '.$ser->brand_nameen }}  </b></name>
+            ស្លាកយីហោ <name class="font-head namekh"> {{ $ser->brand_namekh }} <b>{{ $ser->brand_nameen==''?'':'('.$ser->brand_nameen.')' }}  </b></name>
             មានទីតាំងស្ថិតនៅ {{ $ser->home==''?'':'ផ្ទះលេខ'.$ser->home }}
               {{ $ser->street==''?'':'ផ្លូវ'.$ser->street }}
               {{ $ser->group==''?'':'ក្រុមទី'.$ser->group }}
@@ -217,7 +217,7 @@
         </span>
 
         <input class="t8" value="ថ្ងៃ                       ខែ              ឆ្នាំខាល ចត្វាស័ក ព.ស.២៥៦៦" id="lunar_date">
-        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២២  ">
+        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២៣  ">
 {{--        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">--}}
 {{--        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">--}}
         <span class="t10 font-head">អភិបាលក្រុង </span>

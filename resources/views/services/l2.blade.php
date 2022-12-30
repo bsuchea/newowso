@@ -198,7 +198,7 @@ input[type="text"]:focus {
         <span class="h3 font-head">{{ $pro }}</span>
         <span class="h4 font-head">រដ្ឋបាល{{ $dis }}</span>
 
-        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២២</sub> កបប</span>
+        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២៣</sub> ពណក.កបប</span>
 {{--        <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>--}}
 
         <span class="h6 font-head">បណ្ណអនុញ្ញាត</span>
@@ -210,7 +210,7 @@ input[type="text"]:focus {
         <span class="s1">ប្រភេទអាជីវកម្ម-សេវាកម្ម-ពាណិជ្ជកម្ម </span>
         <span class="ser_type font-head">: {{ $ser->business_type }}  </span>
         <span class="b1">នាមករណ៍ </span>
-        <span class="brand font-head">: {{ $ser->brand_namekh }} <b>{{ $ser->brand_nameen==''?'':'- '.$ser->brand_nameen }}  </b></span>
+        <span class="brand font-head">: {{ $ser->brand_namekh }} <b>{{ $ser->brand_nameen==''?'':'('.$ser->brand_nameen.')' }}  </b></span>
         <span class="a1">អាសយដ្ឋានអាជីវកម្ម</span>
         <span class="addr">
             : {{ $ser->home==''?'':'ផ្ទះលេខ'.$ser->home }}
@@ -232,7 +232,7 @@ input[type="text"]:focus {
         </span>
 
         <input class="t8" value="ថ្ងៃ                       ខែ              ឆ្នាំខាល ចត្វាស័ក ព.ស.២៥៦៦" id="lunar_date">
-        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២២  ">
+        <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២៣  ">
 {{--         <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">--}}
 {{--        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">--}}
 
