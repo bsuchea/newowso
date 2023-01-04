@@ -198,7 +198,7 @@ input[type="text"]:focus {
         <span class="h3 font-head">{{ $pro }}</span>
         <span class="h4 font-head">រដ្ឋបាល{{ $dis }}</span>
 
-        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២៣</sub> ពណក.កបប</span>
+        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២៣</sub> ពណ.កបប</span>
 {{--        <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>--}}
 
         <span class="h6 font-head">បណ្ណអនុញ្ញាត</span>
