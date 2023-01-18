@@ -41,15 +41,15 @@
 }
 .h3 {
     top: 190px;
-    left: 150px;
+    left: 160px;
 }
 .h4 {
     top: 215px;
-    left: 120px;
+    left: 135px;
 }
 .h5 {
     top: 242px;
-    left: 75px;
+    left: 90px;
     width: 260px;
     text-align: center;
 }
@@ -204,8 +204,7 @@
         <span class="h3 font-head">{{ $pro }}</span>
         <span class="h4 font-head">រដ្ឋបាល{{ $dis }}</span>
 
-        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២៣</sub> វវស.កបប.</span>
-{{--        <span class="h5">លេខៈ {{ $tran->letter_number }} កបប</span>--}}
+        <span class="h5">លេខៈ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<sub>២៣</sub> វវស.កបប.</span>
 
         <div class="photobox"><br><br>4 x 6</div>
 
