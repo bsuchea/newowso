@@ -40,16 +40,16 @@
     left: 886px;
 }
 .h3 {
-    top: 190px;
-    left: 150px;
+    top: 180px;
+    left: 175px;
 }
 .h4 {
-    top: 215px;
-    left: 120px;
+    top: 205px;
+    left: 145px;
 }
 .h5 {
-    top: 242px;
-    left: 75px;
+    top: 232px;
+    left: 100px;
     width: 260px;
     text-align: center;
 }
@@ -64,7 +64,7 @@
 .h7 {
     top: 247px;
     left: 237px;
-    font-size: 18px;
+    font-size: 16px;
     width: 700px;
     text-align: center;
 }
@@ -244,7 +244,7 @@
             @if($tran->amount != '') ចំនួន  {{ convertToKhmerNumber($tran->amount) }}{{ $ser_type->gauge }} @endif
         </span>
         <span class="b1">នាមករណ៍ </span>
-        <span class="brand">: <b>{{ $ser->brand_namekh }} {{ $ser->brand_nameen==''?'':'('.$ser->brand_nameen.')' }}  </b></span>
+        <span class="brand font-head">: {{ $ser->brand_namekh }} {{ $ser->brand_nameen==''?'':'('.$ser->brand_nameen.')' }} </span>
         <span class="a1">អាសយដ្ឋានអាជីវកម្ម</span>
         <span class="addr">
             : {{ $ser->home==''?'':'ផ្ទះលេខ'.$ser->home }}
