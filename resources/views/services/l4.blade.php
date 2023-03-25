@@ -113,11 +113,11 @@
 }
 .n1 {
     top: 418px;
-    left: 260px;
+    left: 248px;
 }
 .name {
     top: 418px;
-    left: 415px;
+    left: 390px;
 }
 .namekh{
     font-size: 15px;
@@ -127,35 +127,35 @@
 }
 .s1 {
     top: 440px;
-    left: 260px;
+    left: 248px;
 }
 .ser_type {
     top: 440px;
-    left: 415px;
+    left: 390px;
 }
 .b1 {
     top: 462px;
-    left: 260px;
+    left: 248px;
 }
 .brand {
     top: 462px;
-    left: 415px;
+    left: 390px;
 }
 .a1 {
     top: 483px;
-    left: 260px;
+    left: 248px;
 }
 .addr {
     top: 483px;
-    left: 415px;
+    left: 390px;
 }
 .t6 {
     top: 505px;
-    left: 308px;
+    left: 248px;
 }
 .t7 {
     top: 528px;
-    left: 308px;
+    left: 248px;
 }
 .t8 , .t9 {
     font-family: "Khmer", "Khmer OS Battambang", "Khmer OS Siemreap";
