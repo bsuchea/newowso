@@ -222,7 +222,7 @@ input[type="text"]:focus {
         <span class="t7">
                 បំរាមៈ ហាមជួញដូរគ្រឿងញៀន-ផ្លូវភេទ ហាមកេងប្រវ័ញ្ញពលកម្មកុមារ និងត្រូវបិទស្លាកហាមជក់បារី។
         </span>
-        <input class="t8" value="ថ្ងៃ                       ខែ              ឆ្នាំខាល ចត្វាស័ក ព.ស.២៥៦៦" id="lunar_date">
+        <input class="t8" value="ថ្ងៃ                       ខែ              ឆ្នាំថោះ បញ្ចស័ក ព.ស.២៥៦៦" id="lunar_date">
         <input class="t9" value="ក្រុងបាត់ដំបង ថ្ងៃទី           ខែ             ឆ្នាំ២០២៣  ">
 {{--        <input class="t8" value="{{ \Carbon\Carbon::make($tran->date_out)->format('d/m/Y') }}" id="lunar_date">--}}
 {{--        <input class="t9" value="ក្រុងបាត់ដំបង {{ dateKh($tran->date_out) }}">--}}
