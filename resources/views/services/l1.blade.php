@@ -233,7 +233,7 @@
             ភូមិ{{ $vil2->namekh }} សង្កាត់{{ $com2->namekh }} ក្រុងបាត់ដំបង ខេត្ដបាត់ដំបង។
         </span>
         <span class="t6">
-            បណ្ណអនុញ្ញាតិនេះ មានសុពលភាពរយៈពេល <b>{{ $ser_type->validity }}</b>
+            បណ្ណអនុញ្ញាតនេះ មានសុពលភាពរយៈពេល <b>{{ $ser_type->validity }}</b>
             មានប្រសិទ្ធិភាពត្រឹម
             <b>
             ថ្ងៃទី &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
